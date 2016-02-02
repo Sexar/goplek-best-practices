@@ -49,7 +49,7 @@ Recomiendo utilizar el formato top-down ya que los estilos aparecerán en relaci
 sitio web, esto ayudará a que tus estilos tengan una secuencia y puedas ubicarlos más rápido. Por ejemplo para un sitio
  con esta estructura:
 
-```css
+```html
 <section id=”about-us”></section>
 <section id=”products”></section>
 <section id=”contact”></section>
@@ -68,7 +68,7 @@ Los estilos aparecerán así:
 Es común que en un sitio existan elementos que comparten propiedades, en lugar de volver a escribir el estilo
 ¿por qué no combinarlos?. Por ejemplo los títulos h1, h2 y h3 podrían compartir el mismo color y la misma fuente
 
-```css
+```html
 h1,
 h2,
 h3 {
@@ -92,7 +92,7 @@ Utilizar múltiples clases en un elemento resulta de beneficioso. Imagina que ti
 una caja que quieres hacer flotar a la derecha y tienes una clase .right que hace flotar todo a la derecha,
 simplemente tienes que agregar el nombre de la clase en el elemento de la siguiente manera:
 
-```css
+```html
 <div class=”box right”></div>
 ```
 
@@ -130,13 +130,13 @@ o forzando un elemento a tener propiedades que no le corresponden.
 Antes de envolver un elemento en un div y asignarle una clase con sus respectivos estilos analiza si se puede agregar
 los estilos directamente al elemento por ejemplo
 
-```css
+```html
 <div class=”header-text”><h1>Header Text</h1></div>
 ```
 
 Sería más fácil agregar los estilos directamente al título
 
-```css
+```html
 <h1>Header Text</h1>
 ```
 
@@ -191,7 +191,7 @@ listas también son muy útiles a la hora de crear menús de navegación, te pod
 Si pensamos en los elementos de una página como objetos o componentes independientes no tendrás que ser muy específico
 a la hora de declarar los estilos para no sobreescribir otros. Imagina este ejemplo
 
-```css
+```html
 body #container .main-nav {
 	...
 }
@@ -199,7 +199,7 @@ body #container .main-nav {
 
 Cuando fácilmente podrías utilizar un solo selector
 
-```css
+```html
 .main-nav {
 	...
 }
